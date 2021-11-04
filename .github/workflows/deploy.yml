@@ -42,6 +42,8 @@ jobs:
 
       # 部署
       - name: Deploy
+        run: git config --global user.email "action@github.com"
+        run: git config --global user.name "github-actions"
         run: yarn deploy
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
