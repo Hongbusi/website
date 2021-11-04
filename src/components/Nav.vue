@@ -47,5 +47,5 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', getScrollTop);
-}); 
+});
 </script>
