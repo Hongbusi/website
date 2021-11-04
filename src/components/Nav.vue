@@ -1,18 +1,17 @@
 <template>
   <header
-    class="bg-transparent w-full top-0 left-0"
-    :class="visible ? 'fixed bg-red-500' : 'relative'"
-    style="height: 64px;"
+    class="fixed top-0 left-0 w-full h-16"
+    :class="visible && 'bg-red-500'"
   >
     <nav class="container h-full flex justify-between items-center text-white">
-      <a href="#" class="inline-block" style="height: 40px;">
+      <a href="#" class="inline-block h-12">
         <img alt="Hongbusi logo" class="h-full inline-block" src="../assets/logo.png" />
         <span class=" ml-3 text-20">Hongbusi</span>
       </a>
       <ul class="flex h-full">
-        <li v-for="(item, index) in 4" :key="index">
-          <a href="javascript:;" class="flex items-center px-4 h-full hover:bg-gray-500 hover:bg-opacity-20 transition-color">
-            链接
+        <li v-for="(item, index) in sections" :key="index">
+          <a :href="`#${item.anchorPoint}`" class="flex items-center px-6 h-full hover:bg-gray-500 hover:bg-opacity-20 transition-color">
+            {{ item.text }}
           </a>
         </li>
       </ul>
@@ -23,6 +22,13 @@
 </template>
 
 <script setup lang="ts">
+const sections = [
+  { text: '首页', anchorPoint: 'home' },
+  { text: '文档汇总', anchorPoint: 'docs' },
+  { text: '关于我', anchorPoint: 'about' },
+  { text: '友情链接', anchorPoint: 'links' }
+];
+
 import { ref, onMounted, onUnmounted } from 'vue';
 import GitLink from './GitLink.vue';
 
