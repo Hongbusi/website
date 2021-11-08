@@ -23,7 +23,6 @@
 
 <script setup lang="ts">
 const sections = [
-  { text: '首页', anchorPoint: 'home' },
   { text: '文档汇总', anchorPoint: 'docs' },
   { text: '关于我', anchorPoint: 'about' },
   { text: '友情链接', anchorPoint: 'links' }

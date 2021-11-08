@@ -10,18 +10,23 @@
       :id="`${item.anchorPoint}`"
       class="container min-h-screen pt-24 pb-6"
     >
-      <h3>{{ item.text }}</h3>
+      <h1>{{ item.text }}</h1>
+      <component :is="item.component" />
     </section>
   </main>
 </template>
 
 <script setup lang="ts">
+import TheNav from './components/Nav.vue';
+import Docs from './views/Docs.vue';
+import About from './views/About.vue';
+import Links from './views/Links.vue';
+
+
 const sections = [
-  { text: '首页', anchorPoint: 'home' },
-  { text: '文档汇总', anchorPoint: 'docs' },
-  { text: '关于我', anchorPoint: 'about' },
-  { text: '友情链接', anchorPoint: 'links' }
+  { text: '文档汇总', anchorPoint: 'docs', component: Docs },
+  { text: '关于我', anchorPoint: 'about', component: About },
+  { text: '友情链接', anchorPoint: 'links', component: Links }
 ];
 
-import TheNav from './components/Nav.vue';
 </script>
