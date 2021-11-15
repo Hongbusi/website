@@ -23,24 +23,24 @@
 </template>
 
 <style>
-  .git-link:hover .arm {
-    animation: swing 0.56s ease-in-out;
+.git-link:hover .arm {
+  animation: swing 0.56s ease-in-out;
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(0);
   }
 
-  @keyframes swing {
-    0%,
-    100% {
-      transform: rotate(0);
-    }
-
-    20%,
-    60% {
-      transform: rotate(-25deg);
-    }
-
-    40%,
-    80% {
-      transform: rotate(10deg);
-    }
+  20%,
+  60% {
+    transform: rotate(-25deg);
   }
+
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
 </style>

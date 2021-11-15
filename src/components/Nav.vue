@@ -29,29 +29,29 @@
 </template>
 
 <script setup lang="ts">
-  const sections = [
-    { text: '文档汇总', anchorPoint: 'docs' },
-    { text: '关于我', anchorPoint: 'about' },
-    { text: '友情链接', anchorPoint: 'links' },
-  ];
+const sections = [
+  { text: '文档汇总', anchorPoint: 'docs' },
+  { text: '关于我', anchorPoint: 'about' },
+  { text: '友情链接', anchorPoint: 'links' },
+];
 
-  import { ref, onMounted, onUnmounted } from 'vue';
-  import GitLink from './GitLink.vue';
+import { ref, onMounted, onUnmounted } from 'vue';
+import GitLink from './GitLink.vue';
 
-  const visibilityHeight = 100;
-  const visible = ref(false);
+const visibilityHeight = 100;
+const visible = ref(false);
 
-  function getScrollTop() {
-    const scrollTop = document.documentElement.scrollTop;
-    visible.value = scrollTop >= visibilityHeight;
-  }
+function getScrollTop() {
+  const scrollTop = document.documentElement.scrollTop;
+  visible.value = scrollTop >= visibilityHeight;
+}
 
-  onMounted(() => {
-    getScrollTop();
-    window.addEventListener('scroll', getScrollTop);
-  });
+onMounted(() => {
+  getScrollTop();
+  window.addEventListener('scroll', getScrollTop);
+});
 
-  onUnmounted(() => {
-    window.removeEventListener('scroll', getScrollTop);
-  });
+onUnmounted(() => {
+  window.removeEventListener('scroll', getScrollTop);
+});
 </script>
