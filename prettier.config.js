@@ -30,4 +30,4 @@ module.exports = {
   endOfLine: 'lf',
   // embeddedLanguageFormatting: "off", 默认是 auto, 控制被引号包裹的代码是否进行格式化
   embeddedLanguageFormatting: 'off'
-};
+}
