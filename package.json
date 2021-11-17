@@ -14,7 +14,9 @@
   "dependencies": {
     "vue": "^3.2.21"
   },
+  "prettier": "@hongbusi/prettier-config",
   "devDependencies": {
+    "@hongbusi/prettier-config": "^0.0.1-alpha.0",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
     "@vitejs/plugin-vue": "^1.9.4",
