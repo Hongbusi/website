@@ -924,6 +924,13 @@
   resolved "https://registry.npmjs.org/@hongbusi/prettier-config/-/prettier-config-0.0.1-alpha.0.tgz#39e5340214a228bb935db3334546baed49d5e591"
   integrity sha512-9BRXm32fiWviElzng9ibC02yYnkw2dPOHQYV2lWOpicv4/P8pBXptfIqE2UOtC6MBP0Ym/FE9aHuSBwfpsidxA==
 
+"@hongbusi/tailwindcss-config@^0.0.3-alpha.0":
+  version "0.0.3-alpha.0"
+  resolved "https://registry.npmjs.org/@hongbusi/tailwindcss-config/-/tailwindcss-config-0.0.3-alpha.0.tgz#f4579bec10ec4506573f1fd8e18ff5d60f6f63d6"
+  integrity sha512-CSvpRQXFA8I/GIp+iJOyFnlYtI+WsUUUbm5CBnqqyll4ShsWsWYyI9PIAjI3bNYwv8aoK2LPkxQW5XsydomJfw==
+  dependencies:
+    tailwindcss "^2.2.19"
+
 "@humanwhocodes/config-array@^0.6.0":
   version "0.6.0"
   resolved "https://registry.npmmirror.com/@humanwhocodes/config-array/download/@humanwhocodes/config-array-0.6.0.tgz?cache=0&sync_timestamp=1635880461804&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40humanwhocodes%2Fconfig-array%2Fdownload%2F%40humanwhocodes%2Fconfig-array-0.6.0.tgz#b5621fdb3b32309d2d16575456cbc277fa8f021a"

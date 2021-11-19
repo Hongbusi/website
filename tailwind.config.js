@@ -17,18 +17,5 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: [
-    plugin(function ({ addUtilities }) {
-      const scrollBehaviors = {
-        '.scroll-smooth': {
-          'scroll-behavior': 'smooth'
-        },
-        '.scroll-auto': {
-          'scroll-behavior': 'auto'
-        }
-      };
-
-      addUtilities(scrollBehaviors);
-    })
-  ]
+  plugins: require('@hongbusi/tailwindcss-config')
 };
