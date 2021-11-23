@@ -12,6 +12,7 @@
     "lint:lint-staged": "lint-staged"
   },
   "dependencies": {
+    "swiper": "^7.3.0",
     "vue": "^3.2.21"
   },
   "prettier": "@hongbusi/prettier-config",

@@ -12,7 +12,15 @@ module.exports = {
         '2xl': '6rem'
       }
     },
-    extend: {}
+    extend: {
+      backgroundImage: {
+        'banner-1': "url('/src/assets/1.jpeg')",
+        'banner-2': "url('/src/assets/2.jpeg')",
+        'banner-3': "url('/src/assets/3.jpeg')",
+        'banner-4': "url('/src/assets/4.jpeg')",
+        'banner-5': "url('/src/assets/5.jpeg')"
+      }
+    }
   },
   variants: {
     extend: {}

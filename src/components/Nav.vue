@@ -1,8 +1,15 @@
 <template>
-  <header class="fixed top-0 left-0 w-full h-16" :class="visible && 'bg-red-500'">
+  <header
+    class="fixed top-0 left-0 w-full h-16 z-50"
+    :class="visible && 'bg-red-500'"
+  >
     <nav class="container h-full flex justify-between items-center text-white">
       <a href="#" class="inline-block h-12">
-        <img alt="Hongbusi logo" class="h-full inline-block" src="../assets/logo.png" />
+        <img
+          class="h-full inline-block"
+          src="../assets/logo.png"
+          alt="Hongbusi Logo"
+        />
         <span class="ml-3 text-20">Hongbusi</span>
       </a>
       <ul class="flex h-full">
@@ -32,7 +39,7 @@
 const sections = [
   { text: '文档汇总', anchorPoint: 'docs' },
   { text: '关于我', anchorPoint: 'about' },
-  { text: '友情链接', anchorPoint: 'links' },
+  { text: '友情链接', anchorPoint: 'links' }
 ];
 
 import { ref, onMounted, onUnmounted } from 'vue';
