@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "swiper": "^7.3.0",
-    "vue": "^3.2.21"
+    "vue": "3.2.23"
   },
   "prettier": "@hongbusi/prettier-config",
   "devDependencies": {
