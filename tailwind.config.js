@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
@@ -23,7 +25,31 @@ module.exports = {
     }
   },
   variants: {
+    container: [],
     extend: {}
   },
-  plugins: require('@hongbusi/tailwindcss-config')
+  corePlugins: {
+    container: false
+  },
+  plugins: [
+    plugin(({ addBase, addUtilities, theme }) => {
+      addBase({
+        html: { minWidth: theme('screens.xl') }
+      });
+      addUtilities({
+        '.container': {
+          paddingRight: '16px',
+          paddingLeft: '16px',
+          marginRight: 'auto',
+          marginLeft: 'auto',
+          width: theme('screens.xl'),
+          textAlign: 'center'
+        },
+        '.min-w-screen-xl': {
+          minWidth: theme('screens.xl')
+        }
+      });
+    }),
+    ...require('@hongbusi/tailwindcss-config')
+  ]
 };

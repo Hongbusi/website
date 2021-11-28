@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed top-0 left-0 w-full h-16 z-50"
+    class="sticky top-0 w-full min-w-screen-xl h-16 z-50"
     :class="visible && 'bg-red-500'"
   >
     <nav class="container h-full flex justify-between items-center text-white">
