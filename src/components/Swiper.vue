@@ -3,13 +3,10 @@
     class="h-screen"
     :loop="true"
     :pagination="{ clickable: true }"
-    :autoplay="{ delay: 4000, disableOnInteraction: false }"
+    :autoplay="{ delay: 6000, disableOnInteraction: false }"
   >
-    <swiper-slide v-for="(banner, index) in banners" :key="index">
-      <div
-        class="w-full h-full overflow-hidden bg-no-repeat bg-cover bg-center"
-        :class="banner"
-      />
+    <swiper-slide>
+      <paper-bird />
     </swiper-slide>
   </swiper>
 </template>
@@ -23,11 +20,5 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 
-const banners = [
-  'bg-banner-1',
-  'bg-banner-2',
-  'bg-banner-3',
-  'bg-banner-4',
-  'bg-banner-5'
-];
+import PaperBird from './PaperBird.vue';
 </script>

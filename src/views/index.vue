@@ -1,7 +1,7 @@
 <template>
   <the-nav />
   <main class="-mt-16">
-    <paper-bird />
+    <swiper />
 
     <section
       v-for="(item, index) in sections"
@@ -17,7 +17,7 @@
 
 <script setup lang="ts">
 import TheNav from '@/components/Nav.vue';
-import PaperBird from '@/components/PaperBird.vue';
+import Swiper from '@/components/Swiper.vue';
 import Docs from '@/components/Docs.vue';
 import About from '@/components/About.vue';
 import Links from '@/components/Links.vue';
