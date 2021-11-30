@@ -1,17 +1,18 @@
 <template>
-  <div
-    class="
-      overflow-hidden
-      flex
-      justify-center
-      items-center
-      h-screen
-      bg-blue-200
-    "
-  >
-    <div class="sky -mt-16">
+  <div class="overflow-hidden flex justify-center items-center pb-40 h-screen">
+    <div class="sky">
       <div class="bird">
-        <div v-for="index in 10" :key="index" class="wind" />
+        <div class="wind" />
+        <div class="wind" />
+        <div class="wind" />
+        <div class="wind" />
+        <div class="wind" />
+        <div class="wind" />
+        <div class="wind" />
+        <div class="wind" />
+        <div class="wind" />
+        <div class="wind" />
+
         <div class="bird_body">
           <div class="bird_head" />
           <div class="bird_wing_left">
@@ -39,7 +40,7 @@
 }
 
 .sky .bird {
-  animation: fly 6s linear infinite;
+  animation: fly 10s linear infinite;
 }
 
 .sky .bird .wind {
@@ -230,83 +231,76 @@
 
 .sky .bird_body {
   position: relative;
-  width: 60px;
-  height: 80px;
+  width: 30px;
+  height: 40px;
   background: #70addd;
 }
 
 .sky .bird_head {
   position: absolute;
-  top: -60px;
-  border-right: 30px solid transparent;
-  border-bottom: 60px solid #6b83fa;
-  border-left: 30px solid transparent;
+  top: -30px;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #6b83fa;
+  border-left: 15px solid transparent;
   transform-origin: 50% 100%;
   transform: rotateX(-20deg);
 }
 
 .sky .bird_wing_left {
   position: absolute;
-  left: -60px;
-  height: 60px;
-  border-right: 60px solid #a399d1;
-  border-bottom: 20px solid transparent;
+  left: -30px;
+  height: 30px;
+  border-right: 30px solid #a399d1;
+  border-bottom: 10px solid transparent;
   transform-origin: 100% 0;
-  -webkit-animation: wingLeft 1000ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite
-    alternate;
+  -webkit-animation: wingLeft 1000ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate;
   animation: wingLeft 1000ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate;
 }
 
 .sky .bird_wing_left_top {
   position: absolute;
-  left: -60px;
-  border-right: 60px solid #929ccf;
-  border-bottom: 60px solid transparent;
+  left: -30px;
+  border-right: 30px solid #929ccf;
+  border-bottom: 30px solid transparent;
   transform-origin: 100% 0;
-  -webkit-animation: wingLeft 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975)
-    infinite alternate;
-  animation: wingLeft 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite
-    alternate;
+  -webkit-animation: wingLeft 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite alternate;
+  animation: wingLeft 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite alternate;
 }
 
 .sky .bird_wing_right {
   position: absolute;
-  left: 60px;
-  height: 60px;
-  border-left: 60px solid #8567f0;
-  border-bottom: 20px solid transparent;
+  left: 30px;
+  height: 30px;
+  border-left: 30px solid #8567f0;
+  border-bottom: 10px solid transparent;
   transform-origin: 0 0;
-  -webkit-animation: wingRight 1000ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite
-    alternate;
-  animation: wingRight 1000ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite
-    alternate;
+  -webkit-animation: wingRight 1000ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate;
+  animation: wingRight 1000ms cubic-bezier(0.36, 0.1, 0.16, 1) infinite alternate;
 }
 
 .sky .bird_wing_right_top {
   position: absolute;
-  border-left: 60px solid #c0a9e0;
-  border-bottom: 60px solid transparent;
+  border-left: 30px solid #c0a9e0;
+  border-bottom: 30px solid transparent;
   transform-origin: 0 0;
-  -webkit-animation: wingRight 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975)
-    infinite alternate;
-  animation: wingRight 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite
-    alternate;
+  -webkit-animation: wingRight 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite alternate;
+  animation: wingRight 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite alternate;
 }
 
 .sky .bird_tail_left {
   position: absolute;
-  top: 80px;
-  border-right: 60px solid transparent;
-  border-top: 80px solid #74a3ff;
+  top: 40px;
+  border-right: 30px solid transparent;
+  border-top: 40px solid #74a3ff;
   transform-origin: 50% 0;
   transform: rotateX(-20deg);
 }
 
 .sky .bird_tail_right {
   position: absolute;
-  top: 80px;
-  border-left: 60px solid transparent;
-  border-top: 80px solid #a3c8ce;
+  top: 40px;
+  border-left: 30px solid transparent;
+  border-top: 40px solid #a3c8ce;
   transform-origin: 50% 0;
   transform: rotateX(-20deg);
 }

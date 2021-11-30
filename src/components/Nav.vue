@@ -1,29 +1,15 @@
 <template>
-  <header
-    class="sticky top-0 w-full min-w-screen-xl h-16 z-50"
-    :class="visible && 'bg-red-500'"
-  >
+  <header class="sticky top-0 w-full min-w-screen-xl h-16 z-50" :class="visible && 'bg-red-500'">
     <nav class="container h-full flex justify-between items-center text-white">
       <a href="#" class="inline-block h-12">
-        <img
-          class="h-full inline-block"
-          src="../assets/logo.png"
-          alt="Hongbusi Logo"
-        />
+        <img class="h-full inline-block" src="../assets/logo.png" alt="Hongbusi Logo" />
         <span class="ml-3 text-20">Hongbusi</span>
       </a>
       <ul class="flex h-full">
         <li v-for="(item, index) in sections" :key="index">
           <a
             :href="`#${item.anchorPoint}`"
-            class="
-              flex
-              items-center
-              px-6
-              h-full
-              hover:bg-gray-500 hover:bg-opacity-20
-              transition-color
-            "
+            class="flex items-center px-6 h-full hover:bg-gray-500 hover:bg-opacity-20 transition-color"
           >
             {{ item.text }}
           </a>
